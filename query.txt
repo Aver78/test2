@@ -1,0 +1,8 @@
+SELECT 
+p.name,
+COUNT(g.name) count
+FROM buy b
+LEFT JOIN person p ON b.person_id = p.id
+LEFT JOIN goods g ON b.goods_id = g.id
+GROUP BY  p.name
+HAVING count > 2 

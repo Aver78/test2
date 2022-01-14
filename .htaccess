@@ -1,0 +1,8 @@
+AddDefaultCharset utf-8
+php_flag display_errors On
+php_value error_reporting "E_ALL & ~E_NOTICE &~E_DEPRECATED"
+
+RewriteEngine On
+
+ #RewriteRule .* index.php?token=%{QUERY_STRING} [L]
+  #RewriteRule .* http://%{HTTP_HOST}?token=%{REQUEST_URI}
